@@ -1,0 +1,9 @@
+#!/bin/bash
+
+clone_cmd="git clone https://github.com/repo --depth 1 plugins/repo"
+clone_list=($( cat plugins/list ))
+
+printf '%s\n' ${clone_list[@]} | xargs -I repo $clone_cmd
+
+[[ -d $HOME/bin ]] || mkdir -v $HOME/bin
+tar -xjvf code-minimap.tbz2 -C $HOME/bin
