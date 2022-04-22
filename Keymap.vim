@@ -1,7 +1,7 @@
 
 " ================================= Braces & Brackets =================
 
-  source $HOME/.config/nvim/Brackets.vim
+  source $HOME/.config/vim/Brackets.vim
 
 " ================================= Comments ==========================
 
@@ -68,9 +68,9 @@
   nnoremap <A-r> :resize 
   nnoremap <A-t> :tabfind 
   nnoremap <A-f> :sfind 
-  nnoremap <Leader>col :sfind ~/.config/nvim/Color.vim<CR>
-  nnoremap <Leader>key :sfind ~/.config/nvim/Keymap.vim<CR>
-  nnoremap <Leader>init :sfind ~/.config/nvim/init.vim<CR>
+  nnoremap <Leader>col :sfind ~/.config/vim/Color.vim<CR>
+  nnoremap <Leader>key :sfind ~/.config/vim/Keymap.vim<CR>
+  nnoremap <Leader>init :sfind ~/.config/vim/init.vim<CR>
   nnoremap <Leader>yml ggO--- #<esc>:r!date -u +\%s<CR>kJGo...<esc>kA
   nnoremap <Leader>s :w 
   nnoremap <Leader>S :w 

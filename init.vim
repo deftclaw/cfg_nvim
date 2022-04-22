@@ -10,14 +10,14 @@
   set showmode                 " default, display mode at bottom line
   set smartcase                " Unless includes capital
   set cursorline               " Locate the cursor vertically
-  set path+=~/.io/.blanks/**   " Edit Blanks Easily
-  set path+=~/.config/**       " Edit Configurations Easily
+  set path+=$HOME/.io/.blanks/**   " Edit Blanks Easily
+  set path+=$HOME/.config/**       " Edit Configurations Easily
   set path+=**                 " search recursive for files
 
   set omnifunc=htmlcomplete#CompleteTags
   autocmd FileType ruby setl omnifunc=syntaxcomplete#Complete
 
-  let $BASH_ENV = "~/.io/config/.aliases"
+  let $BASH_ENV = "$HOME/.io/config/.aliases"
 
   " Update Leader Key to Space
   let mapleader=" "
@@ -37,8 +37,8 @@
 " =================== Persistent Undo ==================================
 
   set nowb
-  silent !mkdir ~/.config/nvim/undos > /dev/null 2>$1
-  set undodir=~/.config/nvim/undos
+  silent !mkdir $HOME/.config/vim/undos > /dev/null 2>$1
+  set undodir=$HOME/.config/vim/undos
   set undofile
 
 " =================== Folds ============================================
@@ -49,7 +49,7 @@
 
 " =================== Keys =============================================
 
-  source ~/.config/nvim/Keymap.vim 
+  source $HOME/.config/vim/Keymap.vim 
 
 " =================== Indentation ======================================
 
@@ -74,11 +74,11 @@
 
 " =================== Plugins Load =====================================
 
-  set runtimepath+=$HOME/.config/nvim/**
+  set runtimepath+=$HOME/.config/vim/**
 
 " =================== Colors ==========================================
 
-  source ~/.config/nvim/Color.vim
+  source $HOME/.config/vim/Color.vim
 
 " =================== Status Line =====================================
 
@@ -97,4 +97,4 @@
 
 " ================================= Language Servers ==================
 
-  luafile ~/.config/nvim/lua/language_servers
+" luafile $HOME/.config/vim/lua/language_servers

@@ -6,4 +6,4 @@ clone_list=($( cat plugins/list ))
 printf '%s\n' ${clone_list[@]} | xargs -I repo $clone_cmd
 
 [[ -d $HOME/bin ]] || mkdir -v $HOME/bin
-tar -xjvf code-minimap.tbz2 -C $HOME/bin
+[[ ! -f $HOME/bin/code-minimap ]] && tar -xjvf code-minimap.tbz2 -C $HOME/bin
