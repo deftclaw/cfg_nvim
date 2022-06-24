@@ -1,6 +1,5 @@
 " ================================ Colors =============================
 " Use :so $VIMRUNTIME/syntax/hitest.vim to preview
-  set termguicolors
 
   hi   ColorColumn  guibg=#026228 guifg=NONE    gui=NONE
   hi   Comment      guifg=#BBE0E6 guibg=#1A2F23
@@ -29,3 +28,4 @@
   hi   Type         guifg=#1AA053
   hi   Visual       guibg=#026228
   hi   WildMenu     guibg=#678472 guifg=#000000 gui=NONE
+  hi normal guibg=#1d1f21 guifg=#bdbdbd gui=NONE

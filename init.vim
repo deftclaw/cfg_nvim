@@ -29,7 +29,7 @@
   " Auto-Numbers
   augroup numbertoggle
     autocmd!
-    autocmd BufEnter,FocusGained,InsertLeave * if @% == '-MINIMAP-'|echo 'NONUM'|set norelativenumber|else|set norelativenumber|set number|vertical resize 97|endif
+    autocmd BufEnter,FocusGained,InsertLeave * if @% == '-MINIMAP-'|echo 'NONUM'|set norelativenumber|vertical resize 12|set colorcolumn=12|else|set norelativenumber|set number|endif
     autocmd BufLeave,FocusLost,InsertEnter * if @% == '-MINIMAP-'|echo 'NONUM'|set norelativenumber|else|set relativenumber|endif
   augroup END
   autocmd BufEnter,BufWrite * Minimap
