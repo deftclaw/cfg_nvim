@@ -1,0 +1,11 @@
+junegunn/vim-easy-align
+mason-org/mason-registry
+mfussenegger/nvim-dap
+mfussenegger/nvim-lint
+mhartington/formatter.nvim
+neovim/nvim-lspconfig
+rcarriga/nvim-dap-ui
+ryanoasis/vim-devicons
+tpope/vim-endwise
+williamboman/mason.nvim
+williamboman/mason-lspconfig.nvim

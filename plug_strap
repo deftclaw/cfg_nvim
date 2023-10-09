@@ -1,0 +1,11 @@
+#!/bin/bash
+
+. lib/progress.sh
+
+rm_list=($( ls -F plugins|grep '/' ))
+clone_cmd="git clone https://github.com/repo --depth 1 plugins/repo"
+clone_list=($( cat plugins/list ))
+
+printf '%s\n' ${rm_list[@]}    | xargs -I % rm -vrf plugins/% &>>/tmp/nvim_plugins.log
+printf '%s\n' ${clone_list[@]} | xargs -I repo $clone_cmd     &>>/tmp/nvim_plugins.log &
+progress_indi
