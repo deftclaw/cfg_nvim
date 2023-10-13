@@ -4,6 +4,7 @@ _with language server abilities and simplified shortcuts!_
 ---  
 
 ## Dependencies:  
+ - `bc`  
  - `git`  
  - `curl` __OR__ `wget` _# Does not like busybox version!_  
  - `unzip`  
